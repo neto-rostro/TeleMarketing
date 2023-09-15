@@ -1,0 +1,710 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{47A79276-68A9-4E77-AA1E-AEC962E3D884}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>TeleMarketing</RootNamespace>
+    <AssemblyName>TeleMarketing</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>C:\GGC_Systems\vb.net\</OutputPath>
+    <DocumentationFile>TeleMarketing.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TeleMarketing.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ATSMS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\GGC_Systems\vb.net\ATSMS.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="ggcAppDriver, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\GGC_Systems\vb.net\ggcAppDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="ggcClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\GGC_Systems\vb.net\ggcClient.dll</HintPath>
+    </Reference>
+    <Reference Include="ggcMCSales, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\GGC_Systems\vb.net\ggcMCSales.dll</HintPath>
+    </Reference>
+    <Reference Include="ggcTeleMarketingReports, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\GGC_Systems\vb.net\ggcTeleMarketingReports.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\GGC_Systems\vb.net\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\GGC_Systems\vb.net\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmGanadoEntry.Designer.vb">
+      <DependentUpon>frmGanadoEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGanadoEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOGCallCustInfoCPReg.Designer.vb">
+      <DependentUpon>frmOGCallCustInfoCPReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOGCallCustInfoCPReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOGCallCustInfoCP.Designer.vb">
+      <DependentUpon>frmOGCallCustInfoCP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOGCallCustInfoCP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TLMSalesCP.vb" />
+    <Compile Include="frmOGCallCustInfoReg.Designer.vb">
+      <DependentUpon>frmOGCallCustInfoReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOGCallCustInfoReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TLMSalesMC.vb" />
+    <Compile Include="frmOGCallCustInfo.Designer.vb">
+      <DependentUpon>frmOGCallCustInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOGCallCustInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMCInquiry.designer.vb">
+      <DependentUpon>frmMCInquiry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMCInquiry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMPModelSpecs.Designer.vb">
+      <DependentUpon>frmMPModelSpecs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMPModelSpecs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMPModelFeatures.Designer.vb">
+      <DependentUpon>frmMPModelFeatures.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMPModelFeatures.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductInquiry.designer.vb">
+      <DependentUpon>frmProductInquiry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductInquiry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportViewer.designer.vb">
+      <DependentUpon>frmReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTextMarketingReg.Designer.vb">
+      <DependentUpon>frmTextMarketingReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTextMarketingReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTextMarketing.Designer.vb">
+      <DependentUpon>frmTextMarketing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTextMarketing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClassify.Designer.vb">
+      <DependentUpon>frmClassify.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClassify.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCallManager.Designer.vb">
+      <DependentUpon>frmCallManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCallManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBranchEmailvb.Designer.vb">
+      <DependentUpon>frmBranchEmailvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBranchEmailvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBranchMobile.Designer.vb">
+      <DependentUpon>frmBranchMobile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBranchMobile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCallResult.Designer.vb">
+      <DependentUpon>frmCallResult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCallResult.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeptEmail.Designer.vb">
+      <DependentUpon>frmDeptEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeptEmail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeptMobile.Designer.vb">
+      <DependentUpon>frmDeptMobile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeptMobile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLeadsOptions.Designer.vb">
+      <DependentUpon>frmLeadsOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLeadsOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMCInsCalc.Designer.vb">
+      <DependentUpon>frmMCInsCalc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMCInsCalc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMCInsPrice.Designer.vb">
+      <DependentUpon>frmMCInsPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMCInsPrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMCCashPrice.Designer.vb">
+      <DependentUpon>frmMCCashPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMCCashPrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMCInquiryReg.Designer.vb">
+      <DependentUpon>frmMCInquiryReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMCInquiryReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMCModelFeatures.Designer.vb">
+      <DependentUpon>frmMCModelFeatures.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMCModelFeatures.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMCModelSpecs.Designer.vb">
+      <DependentUpon>frmMCModelSpecs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMCModelSpecs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMCReferral.Designer.vb">
+      <DependentUpon>frmMCReferral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMCReferral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMCReferralReg.Designer.vb">
+      <DependentUpon>frmMCReferralReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMCReferralReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductCategory.Designer.vb">
+      <DependentUpon>frmProductCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductFeatures.Designer.vb">
+      <DependentUpon>frmProductFeatures.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductFeatures.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductSpecs.Designer.vb">
+      <DependentUpon>frmProductSpecs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductSpecs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowMsg.Designer.vb">
+      <DependentUpon>frmShowMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowMsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowMsgOk.Designer.vb">
+      <DependentUpon>frmShowMsgOk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowMsgOk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVotingDetails.designer.vb">
+      <DependentUpon>frmVotingDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVotingDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdiMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdiMain.Designer.vb">
+      <DependentUpon>mdiMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modMain.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmGanadoEntry.resx">
+      <DependentUpon>frmGanadoEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOGCallCustInfoCPReg.resx">
+      <DependentUpon>frmOGCallCustInfoCPReg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOGCallCustInfoCP.resx">
+      <DependentUpon>frmOGCallCustInfoCP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOGCallCustInfoReg.resx">
+      <DependentUpon>frmOGCallCustInfoReg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOGCallCustInfo.resx">
+      <DependentUpon>frmOGCallCustInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMCInquiry.resx">
+      <DependentUpon>frmMCInquiry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMPModelSpecs.resx">
+      <DependentUpon>frmMPModelSpecs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMPModelFeatures.resx">
+      <DependentUpon>frmMPModelFeatures.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductInquiry.resx">
+      <DependentUpon>frmProductInquiry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportViewer.resx">
+      <DependentUpon>frmReportViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTextMarketingReg.resx">
+      <DependentUpon>frmTextMarketingReg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTextMarketing.resx">
+      <DependentUpon>frmTextMarketing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClassify.resx">
+      <DependentUpon>frmClassify.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCallManager.resx">
+      <DependentUpon>frmCallManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBranchEmailvb.resx">
+      <DependentUpon>frmBranchEmailvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBranchMobile.resx">
+      <DependentUpon>frmBranchMobile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCallResult.resx">
+      <DependentUpon>frmCallResult.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeptEmail.resx">
+      <DependentUpon>frmDeptEmail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeptMobile.resx">
+      <DependentUpon>frmDeptMobile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLeadsOptions.resx">
+      <DependentUpon>frmLeadsOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMCInsCalc.resx">
+      <DependentUpon>frmMCInsCalc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMCInsPrice.resx">
+      <DependentUpon>frmMCInsPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMCCashPrice.resx">
+      <DependentUpon>frmMCCashPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMCInquiryReg.resx">
+      <DependentUpon>frmMCInquiryReg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMCModelFeatures.resx">
+      <DependentUpon>frmMCModelFeatures.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMCModelSpecs.resx">
+      <DependentUpon>frmMCModelSpecs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMCReferral.resx">
+      <DependentUpon>frmMCReferral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMCReferralReg.resx">
+      <DependentUpon>frmMCReferralReg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductCategory.resx">
+      <DependentUpon>frmProductCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductFeatures.resx">
+      <DependentUpon>frmProductFeatures.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductSpecs.resx">
+      <DependentUpon>frmProductSpecs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowMsg.resx">
+      <DependentUpon>frmShowMsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowMsgOk.resx">
+      <DependentUpon>frmShowMsgOk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVotingDetails.resx">
+      <DependentUpon>frmVotingDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdiMain.resx">
+      <DependentUpon>mdiMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\void.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\browse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tele21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\end.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\details.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cellphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\code approval.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Code.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ESC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_Small.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_Small_OnMouseOver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_Small_OnMouseDown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK_OnMouseOver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK_OnMouseDown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_OnMouseOver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_OnMouseDown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_OnMouseOver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_OnMouseDown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_Large.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Msgbox.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Product Inquiry.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_OnMouseOver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_OnMouseDown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchInq.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omit-item.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leads.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
