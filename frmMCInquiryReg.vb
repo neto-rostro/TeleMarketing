@@ -7,7 +7,7 @@ Public Class frmMCInquiryReg
     Private pnIndex As Integer
     Private poControl As Control
 
-    Private Sub frmMCInquiry_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+    Private Sub frmMCInquiryReg_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         If pnLoadx = 0 Then
             oTrans = New ggcMCSales.MCProductInquiry(p_oAppDriver, 1230)
             pnLoadx = 1
@@ -54,6 +54,8 @@ Public Class frmMCInquiryReg
                 ComboBox5.SelectedIndex = 3
             Case "TM"
                 ComboBox5.SelectedIndex = 4
+            Case "SR"
+                ComboBox5.SelectedIndex = 5
         End Select
 
         ComboBox8.SelectedIndex = CInt(oTrans.Master("cPurcType"))

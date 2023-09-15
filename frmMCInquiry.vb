@@ -241,6 +241,8 @@ Public Class frmMCInquiry
                             oTrans.Master("sInquiryx") = "TB"
                         Case 4
                             oTrans.Master("sInquiryx") = "TM"
+                        Case 5
+                            oTrans.Master("sInquiryx") = "SR"
                     End Select
                 Case 8
                     oTrans.Master("cPurcType") = loTxt.SelectedIndex
