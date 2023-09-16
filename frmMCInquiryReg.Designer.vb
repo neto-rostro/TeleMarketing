@@ -251,7 +251,7 @@ Partial Class frmMCInquiryReg
         'ComboBox5
         '
         Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Items.AddRange(New Object() {"Facebook", "Website", "Walk In", "Text Blast", "Text Masking"})
+        Me.ComboBox5.Items.AddRange(New Object() {"Facebook", "Website", "Walk In", "Text Blast", "Text Masking", "Suzuki Referal"})
         Me.ComboBox5.Location = New System.Drawing.Point(120, 226)
         Me.ComboBox5.Name = "ComboBox5"
         Me.ComboBox5.Size = New System.Drawing.Size(131, 21)
