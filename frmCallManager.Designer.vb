@@ -281,7 +281,7 @@ Partial Class frmCallManager
         Me.Label9.ForeColor = System.Drawing.Color.Black
         Me.Label9.Location = New System.Drawing.Point(14, 292)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(44, 16)
+        Me.Label9.Size = New System.Drawing.Size(45, 16)
         Me.Label9.TabIndex = 61
         Me.Label9.Text = "Status"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -303,7 +303,7 @@ Partial Class frmCallManager
         Me.Label8.ForeColor = System.Drawing.Color.Black
         Me.Label8.Location = New System.Drawing.Point(14, 204)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(36, 16)
+        Me.Label8.Size = New System.Drawing.Size(37, 16)
         Me.Label8.TabIndex = 59
         Me.Label8.Text = "Date"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -326,7 +326,7 @@ Partial Class frmCallManager
         Me.Label5.ForeColor = System.Drawing.Color.Black
         Me.Label5.Location = New System.Drawing.Point(14, 230)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(62, 16)
+        Me.Label5.Size = New System.Drawing.Size(63, 16)
         Me.Label5.TabIndex = 57
         Me.Label5.Text = "Remarks"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -348,7 +348,7 @@ Partial Class frmCallManager
         Me.Label4.ForeColor = System.Drawing.Color.Black
         Me.Label4.Location = New System.Drawing.Point(14, 178)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(70, 16)
+        Me.Label4.Size = New System.Drawing.Size(71, 16)
         Me.Label4.TabIndex = 55
         Me.Label4.Text = "Reference"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -370,7 +370,7 @@ Partial Class frmCallManager
         Me.Label1.ForeColor = System.Drawing.Color.Black
         Me.Label1.Location = New System.Drawing.Point(14, 152)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(50, 16)
+        Me.Label1.Size = New System.Drawing.Size(51, 16)
         Me.Label1.TabIndex = 53
         Me.Label1.Text = "Source"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -527,7 +527,7 @@ Partial Class frmCallManager
         Me.Label11.ForeColor = System.Drawing.Color.White
         Me.Label11.Location = New System.Drawing.Point(14, 28)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(64, 16)
+        Me.Label11.Size = New System.Drawing.Size(65, 16)
         Me.Label11.TabIndex = 65
         Me.Label11.Text = "Message"
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -549,7 +549,7 @@ Partial Class frmCallManager
         Me.Label12.ForeColor = System.Drawing.Color.White
         Me.Label12.Location = New System.Drawing.Point(347, 5)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(36, 16)
+        Me.Label12.Size = New System.Drawing.Size(37, 16)
         Me.Label12.TabIndex = 63
         Me.Label12.Text = "Date"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -571,7 +571,7 @@ Partial Class frmCallManager
         Me.Label13.ForeColor = System.Drawing.Color.White
         Me.Label13.Location = New System.Drawing.Point(14, 5)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(72, 16)
+        Me.Label13.Size = New System.Drawing.Size(73, 16)
         Me.Label13.TabIndex = 61
         Me.Label13.Text = "Sender No"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -669,7 +669,7 @@ Partial Class frmCallManager
         Me.lblEnd.ForeColor = System.Drawing.Color.Red
         Me.lblEnd.Location = New System.Drawing.Point(255, 297)
         Me.lblEnd.Name = "lblEnd"
-        Me.lblEnd.Size = New System.Drawing.Size(63, 16)
+        Me.lblEnd.Size = New System.Drawing.Size(64, 16)
         Me.lblEnd.TabIndex = 22
         Me.lblEnd.Text = "08:30:00"
         Me.lblEnd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -682,7 +682,7 @@ Partial Class frmCallManager
         Me.lblStart.ForeColor = System.Drawing.Color.Red
         Me.lblStart.Location = New System.Drawing.Point(60, 297)
         Me.lblStart.Name = "lblStart"
-        Me.lblStart.Size = New System.Drawing.Size(63, 16)
+        Me.lblStart.Size = New System.Drawing.Size(64, 16)
         Me.lblStart.TabIndex = 21
         Me.lblStart.Text = "08:30:00"
         Me.lblStart.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -708,7 +708,7 @@ Partial Class frmCallManager
         Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.Location = New System.Drawing.Point(12, 15)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(78, 16)
+        Me.Label7.Size = New System.Drawing.Size(79, 16)
         Me.Label7.TabIndex = 13
         Me.Label7.Text = "Mobile No"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -731,7 +731,7 @@ Partial Class frmCallManager
         Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(13, 163)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(69, 16)
+        Me.Label6.Size = New System.Drawing.Size(70, 16)
         Me.Label6.TabIndex = 19
         Me.Label6.Text = "Remarks"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -744,7 +744,7 @@ Partial Class frmCallManager
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(12, 81)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(65, 16)
+        Me.Label3.Size = New System.Drawing.Size(66, 16)
         Me.Label3.TabIndex = 17
         Me.Label3.Text = "Address"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -757,7 +757,7 @@ Partial Class frmCallManager
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(12, 49)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(91, 16)
+        Me.Label2.Size = New System.Drawing.Size(92, 16)
         Me.Label2.TabIndex = 15
         Me.Label2.Text = "Client Name"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft

@@ -88,14 +88,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\GGC_Systems\vb.net\ggcClient.dll</HintPath>
     </Reference>
-    <Reference Include="ggcMCSales, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\GGC_Systems\vb.net\ggcMCSales.dll</HintPath>
-    </Reference>
-    <Reference Include="ggcTeleMarketingReports, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\GGC_Systems\vb.net\ggcTeleMarketingReports.dll</HintPath>
-    </Reference>
     <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\GGC_Systems\vb.net\MySql.Data.dll</HintPath>
@@ -701,6 +693,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\post.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ggcMCSales\ggcMCSales.vbproj">
+      <Project>{B1C58318-8858-45A8-95A9-A17C643A0488}</Project>
+      <Name>ggcMCSales</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ggcTeleMarketingReports\ggcTeleMarketingReports.vbproj">
+      <Project>{6DDAA264-2DBB-4ADF-935D-F8CF4CF9FCD7}</Project>
+      <Name>ggcTeleMarketingReports</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

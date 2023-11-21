@@ -58,6 +58,8 @@ Public Class frmOGCallCustInfo
                                 End If
                             Case 7
                                 loTxt.Text = oTrans.Master("sAgentNme")
+                            Case 8
+                                loTxt.Text = oTrans.Master("sRemarksx")
                             Case Else
                                 loTxt.Text = oTrans.Master(loIndex)
                         End Select
@@ -89,6 +91,7 @@ Public Class frmOGCallCustInfo
         txtField05.Text = ""
         txtField06.Text = ""
         txtField07.Text = ""
+        txtField08.Text = ""
 
         txtField80.Text = ""
         txtField81.Text = ""
@@ -158,10 +161,9 @@ Public Class frmOGCallCustInfo
                 Call validateControl()
                 If oTrans.SaveTransaction Then
                     MsgBox("Transaction Saved Successfuly.", MsgBoxStyle.Information, "Notice")
-
+                    NewTransaction()
                 End If
 
-                NewTransaction()
             Case 2 'search
                 Select Case pnIndex
                     Case 2
@@ -261,7 +263,10 @@ Public Class frmOGCallCustInfo
                 Else
                     loTxt.Text = ""
                 End If
-
+            Case 8
+                If (loTxt.Text <> "") Then
+                    oTrans.Master(9) = loTxt.Text
+                End If
         End Select
 
         pnIndex = loIndex
@@ -291,7 +296,9 @@ Public Class frmOGCallCustInfo
             Case 7
                 txtField07.Text = Value
             Case 8
-                txtField01.Text = Format(Value, "MMM dd, yyyy")
+                txtField01.Text = Value
+            Case 9
+                txtField08.Text = Value
             Case 80
                 txtField80.Text = Value
             Case 81
@@ -333,6 +340,12 @@ Public Class frmOGCallCustInfo
                             Exit Sub
                         End If
                         If (txtField03.Text <> "") Then oTrans.SearchMaster(loIndex, loTxt.Text)
+                    Case 8
+                        If (txtField08.Text = "") Then
+                            MsgBox("Please input Note!!", MsgBoxStyle.Information, "Notice")
+                            Exit Sub
+                        End If
+
                     Case 80
                         oTrans.SearchMaster(loIndex, loTxt.Text)
                     Case 81

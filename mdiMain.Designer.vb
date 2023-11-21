@@ -66,6 +66,7 @@ Partial Class mdiMain
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.tslDate = New System.Windows.Forms.ToolStripStatusLabel()
         Me.tslUser = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.LeadsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -207,44 +208,44 @@ Partial Class mdiMain
         'OutboundCallToolStripMenuItem
         '
         Me.OutboundCallToolStripMenuItem.Name = "OutboundCallToolStripMenuItem"
-        Me.OutboundCallToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.OutboundCallToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.OutboundCallToolStripMenuItem.Text = "Outbound Call"
         '
         'SchedulingToolStripMenuItem
         '
         Me.SchedulingToolStripMenuItem.Name = "SchedulingToolStripMenuItem"
-        Me.SchedulingToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SchedulingToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SchedulingToolStripMenuItem.Text = "Scheduling"
         '
         'ATMToolStripMenuItem
         '
         Me.ATMToolStripMenuItem.Name = "ATMToolStripMenuItem"
-        Me.ATMToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ATMToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ATMToolStripMenuItem.Text = "Message Cast"
         '
         'MCInquiryToolStripMenuItem
         '
         Me.MCInquiryToolStripMenuItem.Name = "MCInquiryToolStripMenuItem"
-        Me.MCInquiryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MCInquiryToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.MCInquiryToolStripMenuItem.Text = "MC Inquiry"
         '
         'MCReferralToolStripMenuItem
         '
         Me.MCReferralToolStripMenuItem.Name = "MCReferralToolStripMenuItem"
-        Me.MCReferralToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MCReferralToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.MCReferralToolStripMenuItem.Text = "MC Referral"
         '
         'OutGoingCallInformationToolStripMenuItem
         '
         Me.OutGoingCallInformationToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MCEntryToolStripMenuItem})
         Me.OutGoingCallInformationToolStripMenuItem.Name = "OutGoingCallInformationToolStripMenuItem"
-        Me.OutGoingCallInformationToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.OutGoingCallInformationToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.OutGoingCallInformationToolStripMenuItem.Text = "Sales"
         '
         'MCEntryToolStripMenuItem
         '
         Me.MCEntryToolStripMenuItem.Name = "MCEntryToolStripMenuItem"
-        Me.MCEntryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MCEntryToolStripMenuItem.Size = New System.Drawing.Size(134, 22)
         Me.MCEntryToolStripMenuItem.Text = "Motorcycle"
         '
         'HistoryToolStripMenuItem
@@ -257,43 +258,43 @@ Partial Class mdiMain
         'SchedulingToolStripMenuItem1
         '
         Me.SchedulingToolStripMenuItem1.Name = "SchedulingToolStripMenuItem1"
-        Me.SchedulingToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.SchedulingToolStripMenuItem1.Size = New System.Drawing.Size(146, 22)
         Me.SchedulingToolStripMenuItem1.Text = "Scheduling"
         '
         'MessageCastToolStripMenuItem
         '
         Me.MessageCastToolStripMenuItem.Name = "MessageCastToolStripMenuItem"
-        Me.MessageCastToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MessageCastToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.MessageCastToolStripMenuItem.Text = "Message Cast"
         '
         'MCInquiryToolStripMenuItem1
         '
         Me.MCInquiryToolStripMenuItem1.Name = "MCInquiryToolStripMenuItem1"
-        Me.MCInquiryToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.MCInquiryToolStripMenuItem1.Size = New System.Drawing.Size(146, 22)
         Me.MCInquiryToolStripMenuItem1.Text = "MC Inquiry"
         '
         'MCReferralToolStripMenuItem1
         '
         Me.MCReferralToolStripMenuItem1.Name = "MCReferralToolStripMenuItem1"
-        Me.MCReferralToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.MCReferralToolStripMenuItem1.Size = New System.Drawing.Size(146, 22)
         Me.MCReferralToolStripMenuItem1.Text = "MC Referral"
         '
         'OutGoingCallInformationToolStripMenuItem1
         '
         Me.OutGoingCallInformationToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MCHistoryToolStripMenuItem})
         Me.OutGoingCallInformationToolStripMenuItem1.Name = "OutGoingCallInformationToolStripMenuItem1"
-        Me.OutGoingCallInformationToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.OutGoingCallInformationToolStripMenuItem1.Size = New System.Drawing.Size(146, 22)
         Me.OutGoingCallInformationToolStripMenuItem1.Text = "Sales"
         '
         'MCHistoryToolStripMenuItem
         '
         Me.MCHistoryToolStripMenuItem.Name = "MCHistoryToolStripMenuItem"
-        Me.MCHistoryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MCHistoryToolStripMenuItem.Size = New System.Drawing.Size(134, 22)
         Me.MCHistoryToolStripMenuItem.Text = "Motorcycle"
         '
         'ReportsToolStripMenuItem
         '
-        Me.ReportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OutboundCallsToolStripMenuItem})
+        Me.ReportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OutboundCallsToolStripMenuItem, Me.LeadsToolStripMenuItem})
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
         Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
@@ -352,6 +353,12 @@ Partial Class mdiMain
         Me.tslUser.Name = "tslUser"
         Me.tslUser.Size = New System.Drawing.Size(123, 19)
         Me.tslUser.Text = "ToolStripStatusLabel2"
+        '
+        'LeadsToolStripMenuItem
+        '
+        Me.LeadsToolStripMenuItem.Name = "LeadsToolStripMenuItem"
+        Me.LeadsToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
+        Me.LeadsToolStripMenuItem.Text = "Leads"
         '
         'mdiMain
         '
@@ -418,5 +425,6 @@ Partial Class mdiMain
     Friend WithEvents OutGoingCallInformationToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MCEntryToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MCHistoryToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LeadsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
