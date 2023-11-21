@@ -59,6 +59,7 @@ Partial Class mdiMain
         Me.MCHistoryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OutboundCallsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LeadsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UtilityToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GetMobileNetworkToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WhoIsThisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -66,7 +67,7 @@ Partial Class mdiMain
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.tslDate = New System.Windows.Forms.ToolStripStatusLabel()
         Me.tslUser = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.LeadsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MCSalesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -294,7 +295,7 @@ Partial Class mdiMain
         '
         'ReportsToolStripMenuItem
         '
-        Me.ReportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OutboundCallsToolStripMenuItem, Me.LeadsToolStripMenuItem})
+        Me.ReportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OutboundCallsToolStripMenuItem, Me.LeadsToolStripMenuItem, Me.MCSalesToolStripMenuItem})
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
         Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
@@ -304,6 +305,12 @@ Partial Class mdiMain
         Me.OutboundCallsToolStripMenuItem.Name = "OutboundCallsToolStripMenuItem"
         Me.OutboundCallsToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
         Me.OutboundCallsToolStripMenuItem.Text = "Outbound Calls"
+        '
+        'LeadsToolStripMenuItem
+        '
+        Me.LeadsToolStripMenuItem.Name = "LeadsToolStripMenuItem"
+        Me.LeadsToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
+        Me.LeadsToolStripMenuItem.Text = "Leads"
         '
         'UtilityToolStripMenuItem
         '
@@ -354,11 +361,11 @@ Partial Class mdiMain
         Me.tslUser.Size = New System.Drawing.Size(123, 19)
         Me.tslUser.Text = "ToolStripStatusLabel2"
         '
-        'LeadsToolStripMenuItem
+        'MCSalesToolStripMenuItem
         '
-        Me.LeadsToolStripMenuItem.Name = "LeadsToolStripMenuItem"
-        Me.LeadsToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
-        Me.LeadsToolStripMenuItem.Text = "Leads"
+        Me.MCSalesToolStripMenuItem.Name = "MCSalesToolStripMenuItem"
+        Me.MCSalesToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
+        Me.MCSalesToolStripMenuItem.Text = "MC Sales"
         '
         'mdiMain
         '
@@ -426,5 +433,6 @@ Partial Class mdiMain
     Friend WithEvents MCEntryToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MCHistoryToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents LeadsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MCSalesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
