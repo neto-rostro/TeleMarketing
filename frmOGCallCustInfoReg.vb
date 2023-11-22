@@ -45,8 +45,10 @@ Public Class frmOGCallCustInfoReg
                                 End If
                             Case 6
                                 loTxt.Text = InquiryStatus(oTrans.Master(loIndex))
-
-                  
+                            Case 7
+                                loTxt.Text = oTrans.Master("sAgentNme")
+                            Case 8
+                                loTxt.Text = oTrans.Master("sRemarksx")
 
                             Case Else
                         loTxt.Text = oTrans.Master(loIndex)
@@ -116,7 +118,8 @@ Public Class frmOGCallCustInfoReg
         txtField04.Text = ""
         txtField05.Text = ""
         txtField06.Text = ""
-
+        txtField07.Text = ""
+        txtField08.Text = ""
         txtField80.Text = ""
         txtField81.Text = ""
         txtField82.Text = ""
@@ -152,4 +155,5 @@ Public Class frmOGCallCustInfoReg
             End If
         End If
     End Sub
+
 End Class

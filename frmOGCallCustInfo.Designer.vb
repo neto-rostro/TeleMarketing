@@ -23,6 +23,8 @@ Partial Class frmOGCallCustInfo
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.txtField08 = New System.Windows.Forms.TextBox()
         Me.txtField07 = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.lblStatus = New System.Windows.Forms.Label()
@@ -75,6 +77,8 @@ Partial Class frmOGCallCustInfo
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label18)
+        Me.GroupBox1.Controls.Add(Me.txtField08)
         Me.GroupBox1.Controls.Add(Me.txtField07)
         Me.GroupBox1.Controls.Add(Me.Label17)
         Me.GroupBox1.Controls.Add(Me.lblStatus)
@@ -95,9 +99,28 @@ Partial Class frmOGCallCustInfo
         Me.GroupBox1.Controls.Add(Me.Panel1)
         Me.GroupBox1.Location = New System.Drawing.Point(101, 3)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(430, 333)
+        Me.GroupBox1.Size = New System.Drawing.Size(430, 455)
         Me.GroupBox1.TabIndex = 10
         Me.GroupBox1.TabStop = False
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(6, 345)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(44, 16)
+        Me.Label18.TabIndex = 27
+        Me.Label18.Text = "Notes"
+        '
+        'txtField08
+        '
+        Me.txtField08.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtField08.Location = New System.Drawing.Point(120, 329)
+        Me.txtField08.Multiline = True
+        Me.txtField08.Name = "txtField08"
+        Me.txtField08.Size = New System.Drawing.Size(301, 120)
+        Me.txtField08.TabIndex = 26
         '
         'txtField07
         '
@@ -113,9 +136,9 @@ Partial Class frmOGCallCustInfo
         '
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(12, 304)
+        Me.Label17.Location = New System.Drawing.Point(6, 304)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(42, 16)
+        Me.Label17.Size = New System.Drawing.Size(43, 16)
         Me.Label17.TabIndex = 24
         Me.Label17.Text = "Agent"
         '
@@ -155,9 +178,9 @@ Partial Class frmOGCallCustInfo
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 280)
+        Me.Label3.Location = New System.Drawing.Point(6, 280)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(44, 16)
+        Me.Label3.Size = New System.Drawing.Size(45, 16)
         Me.Label3.TabIndex = 13
         Me.Label3.Text = "Status"
         '
@@ -167,7 +190,7 @@ Partial Class frmOGCallCustInfo
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(6, 111)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(72, 16)
+        Me.Label7.Size = New System.Drawing.Size(73, 16)
         Me.Label7.TabIndex = 7
         Me.Label7.Text = "Mobile No."
         '
@@ -184,9 +207,9 @@ Partial Class frmOGCallCustInfo
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(6, 158)
+        Me.Label6.Location = New System.Drawing.Point(6, 162)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(92, 16)
+        Me.Label6.Size = New System.Drawing.Size(93, 16)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "TLM Remarks"
         '
@@ -206,7 +229,7 @@ Partial Class frmOGCallCustInfo
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(6, 134)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(106, 16)
+        Me.Label5.Size = New System.Drawing.Size(107, 16)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Date Last Called"
         '
@@ -216,7 +239,7 @@ Partial Class frmOGCallCustInfo
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(6, 88)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(64, 16)
+        Me.Label4.Size = New System.Drawing.Size(65, 16)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "Customer"
         '
@@ -244,7 +267,7 @@ Partial Class frmOGCallCustInfo
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(6, 51)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(36, 16)
+        Me.Label2.Size = New System.Drawing.Size(37, 16)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Date"
         '
@@ -264,7 +287,7 @@ Partial Class frmOGCallCustInfo
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(6, 16)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(66, 16)
+        Me.Label1.Size = New System.Drawing.Size(67, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Trans. No"
         '
@@ -288,7 +311,7 @@ Partial Class frmOGCallCustInfo
         Me.GroupBox2.Controls.Add(Me.cmdButton00)
         Me.GroupBox2.Location = New System.Drawing.Point(6, 3)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(89, 602)
+        Me.GroupBox2.Size = New System.Drawing.Size(89, 455)
         Me.GroupBox2.TabIndex = 11
         Me.GroupBox2.TabStop = False
         '
@@ -408,9 +431,9 @@ Partial Class frmOGCallCustInfo
         Me.GroupBox3.Controls.Add(Me.txtField81)
         Me.GroupBox3.Controls.Add(Me.Label13)
         Me.GroupBox3.Controls.Add(Me.Label14)
-        Me.GroupBox3.Location = New System.Drawing.Point(101, 342)
+        Me.GroupBox3.Location = New System.Drawing.Point(537, 12)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(430, 263)
+        Me.GroupBox3.Size = New System.Drawing.Size(430, 446)
         Me.GroupBox3.TabIndex = 12
         Me.GroupBox3.TabStop = False
         '
@@ -418,7 +441,7 @@ Partial Class frmOGCallCustInfo
         '
         Me.txtfield82.Enabled = False
         Me.txtfield82.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtfield82.Location = New System.Drawing.Point(118, 72)
+        Me.txtfield82.Location = New System.Drawing.Point(118, 125)
         Me.txtfield82.Multiline = True
         Me.txtfield82.Name = "txtfield82"
         Me.txtfield82.ReadOnly = True
@@ -429,9 +452,9 @@ Partial Class frmOGCallCustInfo
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(9, 25)
+        Me.Label8.Location = New System.Drawing.Point(9, 78)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(89, 16)
+        Me.Label8.Size = New System.Drawing.Size(90, 16)
         Me.Label8.TabIndex = 26
         Me.Label8.Text = "Branch Name"
         '
@@ -439,7 +462,7 @@ Partial Class frmOGCallCustInfo
         '
         Me.txtField87.Enabled = False
         Me.txtField87.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtField87.Location = New System.Drawing.Point(118, 230)
+        Me.txtField87.Location = New System.Drawing.Point(118, 290)
         Me.txtField87.Multiline = True
         Me.txtField87.Name = "txtField87"
         Me.txtField87.ReadOnly = True
@@ -450,7 +473,7 @@ Partial Class frmOGCallCustInfo
         '
         Me.txtField86.Enabled = False
         Me.txtField86.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtField86.Location = New System.Drawing.Point(118, 206)
+        Me.txtField86.Location = New System.Drawing.Point(118, 265)
         Me.txtField86.Multiline = True
         Me.txtField86.Name = "txtField86"
         Me.txtField86.ReadOnly = True
@@ -461,7 +484,7 @@ Partial Class frmOGCallCustInfo
         '
         Me.txtField85.Enabled = False
         Me.txtField85.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtField85.Location = New System.Drawing.Point(118, 182)
+        Me.txtField85.Location = New System.Drawing.Point(118, 240)
         Me.txtField85.Multiline = True
         Me.txtField85.Name = "txtField85"
         Me.txtField85.ReadOnly = True
@@ -472,9 +495,9 @@ Partial Class frmOGCallCustInfo
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(9, 233)
+        Me.Label16.Location = New System.Drawing.Point(9, 293)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(70, 16)
+        Me.Label16.Size = New System.Drawing.Size(71, 16)
         Me.Label16.TabIndex = 22
         Me.Label16.Text = "Frame No."
         '
@@ -482,9 +505,9 @@ Partial Class frmOGCallCustInfo
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(9, 209)
+        Me.Label15.Location = New System.Drawing.Point(9, 268)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(73, 16)
+        Me.Label15.Size = New System.Drawing.Size(74, 16)
         Me.Label15.TabIndex = 21
         Me.Label15.Text = "Engine No."
         '
@@ -492,7 +515,7 @@ Partial Class frmOGCallCustInfo
         '
         Me.txtField84.Enabled = False
         Me.txtField84.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtField84.Location = New System.Drawing.Point(118, 158)
+        Me.txtField84.Location = New System.Drawing.Point(118, 215)
         Me.txtField84.Multiline = True
         Me.txtField84.Name = "txtField84"
         Me.txtField84.ReadOnly = True
@@ -503,9 +526,9 @@ Partial Class frmOGCallCustInfo
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(9, 137)
+        Me.Label9.Location = New System.Drawing.Point(9, 193)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(48, 16)
+        Me.Label9.Size = New System.Drawing.Size(49, 16)
         Me.Label9.TabIndex = 7
         Me.Label9.Text = "Mobile"
         '
@@ -513,9 +536,9 @@ Partial Class frmOGCallCustInfo
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(9, 185)
+        Me.Label10.Location = New System.Drawing.Point(9, 240)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(45, 16)
+        Me.Label10.Size = New System.Drawing.Size(46, 16)
         Me.Label10.TabIndex = 11
         Me.Label10.Text = "Model"
         '
@@ -523,7 +546,7 @@ Partial Class frmOGCallCustInfo
         '
         Me.txtField83.Enabled = False
         Me.txtField83.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtField83.Location = New System.Drawing.Point(118, 134)
+        Me.txtField83.Location = New System.Drawing.Point(118, 190)
         Me.txtField83.Name = "txtField83"
         Me.txtField83.ReadOnly = True
         Me.txtField83.Size = New System.Drawing.Size(131, 22)
@@ -533,9 +556,9 @@ Partial Class frmOGCallCustInfo
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(9, 161)
+        Me.Label11.Location = New System.Drawing.Point(9, 218)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(107, 16)
+        Me.Label11.Size = New System.Drawing.Size(108, 16)
         Me.Label11.TabIndex = 9
         Me.Label11.Text = "Delivery Receipt"
         '
@@ -543,16 +566,16 @@ Partial Class frmOGCallCustInfo
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(9, 50)
+        Me.Label12.Location = New System.Drawing.Point(9, 103)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(44, 16)
+        Me.Label12.Size = New System.Drawing.Size(45, 16)
         Me.Label12.TabIndex = 5
         Me.Label12.Text = "Name"
         '
         'txtField80
         '
         Me.txtField80.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtField80.Location = New System.Drawing.Point(118, 22)
+        Me.txtField80.Location = New System.Drawing.Point(118, 75)
         Me.txtField80.Name = "txtField80"
         Me.txtField80.Size = New System.Drawing.Size(301, 22)
         Me.txtField80.TabIndex = 5
@@ -560,7 +583,7 @@ Partial Class frmOGCallCustInfo
         'txtField81
         '
         Me.txtField81.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtField81.Location = New System.Drawing.Point(118, 47)
+        Me.txtField81.Location = New System.Drawing.Point(118, 100)
         Me.txtField81.Name = "txtField81"
         Me.txtField81.Size = New System.Drawing.Size(301, 22)
         Me.txtField81.TabIndex = 7
@@ -569,9 +592,9 @@ Partial Class frmOGCallCustInfo
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(9, 80)
+        Me.Label13.Location = New System.Drawing.Point(9, 135)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(58, 16)
+        Me.Label13.Size = New System.Drawing.Size(59, 16)
         Me.Label13.TabIndex = 3
         Me.Label13.Text = "Address"
         '
@@ -582,7 +605,7 @@ Partial Class frmOGCallCustInfo
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.Location = New System.Drawing.Point(6, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(110, 16)
+        Me.Label14.Size = New System.Drawing.Size(111, 16)
         Me.Label14.TabIndex = 0
         Me.Label14.Text = "Sales Information"
         '
@@ -590,7 +613,7 @@ Partial Class frmOGCallCustInfo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(540, 613)
+        Me.ClientSize = New System.Drawing.Size(973, 461)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -651,4 +674,6 @@ Partial Class frmOGCallCustInfo
     Friend WithEvents lblStatus As System.Windows.Forms.Label
     Friend WithEvents Label17 As Label
     Friend WithEvents txtField07 As TextBox
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents txtField08 As System.Windows.Forms.TextBox
 End Class

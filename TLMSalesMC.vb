@@ -78,6 +78,8 @@ Public Class TLMSalesMC
                         Return p_oCallInfosx.cTranStat
                     Case 8 ' dEntryDte
                         Return p_oDTMstr(0).Item(Index)
+                    Case 9 ' sRemarksx
+                        Return p_oDTMstr(0).Item(Index)
                     Case 80 ' sBranchNm
                         If Trim(p_oOthersx.sBranchNm) = "" Then
                             getBranch(7, 7, p_oDTMstr(0).Item(7), True, False)
@@ -116,6 +118,11 @@ Public Class TLMSalesMC
                             p_oDTMstr(0).Item(Index) = Format(CDate(value), "yyyy-MM-dd")
 
                         End If
+                    Case 9
+                        If (value <> "") Then
+                            p_oDTMstr(0).Item(Index) = value
+
+                        End If
 
                         RaiseEvent MasterRetrieved(Index, p_oDTMstr(0).Item(Index))
 
@@ -144,6 +151,7 @@ Public Class TLMSalesMC
                         Return p_oOthersx.sBranchNm
                     Case "sagentnme"
                         Return p_oCallInfosx.sAgentNme
+                    
                     Case Else
                         Return p_oDTMstr(0).Item(Index)
                 End Select
@@ -157,6 +165,10 @@ Public Class TLMSalesMC
                     Case "dentrydte" '8
                         If IsDate(value) Then
                             value = CDate(value)
+                            p_oDTMstr(0).Item(Index) = value
+                        End If
+                    Case "sremarksx" '9
+                        If (value <> "") Then
                             p_oDTMstr(0).Item(Index) = value
                         End If
 
@@ -725,6 +737,11 @@ endProc:
             Return False
         End If
 
+        If p_oDTMstr(0).Item("sRemarksx") = "" Then
+            MsgBox("Note Info seems to have a problem! Please check your entry...", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, p_sMsgHeadr)
+            Return False
+        End If
+
         Return True
     End Function
 
@@ -1150,6 +1167,7 @@ endProc:
                     ", a.sReferCde" & _
                     ", a.sEntryByx" & _
                     ", IFNULL(a.dEntryDte,'') dEntryDte" & _
+                    ", IFNULL(a.sRemarksx,'') sRemarksx" & _
                     ", a.sApproved" & _
                     ", IFNULL(a.dApproved,'') dApproved" & _
                     ", a.cTranStat" & _

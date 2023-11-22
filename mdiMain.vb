@@ -346,4 +346,22 @@ Public Class mdiMain
             .Refresh()
         End With
     End Sub
+
+    Private Sub LeadsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LeadsToolStripMenuItem.Click
+        Dim loRpt As ggcTeleMarketingReports.clsCallStatusReport
+        loRpt = New ggcTeleMarketingReports.clsCallStatusReport(p_oAppDriver)
+
+        If loRpt.getParameter() Then
+            Call loRpt.ReportTrans()
+        End If
+    End Sub
+
+    Private Sub MCSalesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MCSalesToolStripMenuItem.Click
+        Dim loRpt As ggcTeleMarketingReports.clstlmMCSalesReport
+        loRpt = New ggcTeleMarketingReports.clstlmMCSalesReport(p_oAppDriver)
+
+        If loRpt.getParameter() Then
+            Call loRpt.ReportTrans()
+        End If
+    End Sub
 End Class
