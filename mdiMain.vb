@@ -364,4 +364,15 @@ Public Class mdiMain
             Call loRpt.ReportTrans()
         End If
     End Sub
+
+    Private Sub OutBoundCallToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OutBoundCallToolStripMenuItem1.Click
+        With frmCallManagerReg
+            If isFormOpen(.Name) Then Exit Sub
+
+            .MdiParent = Me
+
+            .Show()
+            .Refresh()
+        End With
+    End Sub
 End Class
