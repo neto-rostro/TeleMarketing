@@ -130,15 +130,21 @@ Public Class frmCallManagerRegDetail
 
                 Case 0
                     If chkSchedCall.Checked = True Then
-                        .isCallAgain = True
-                        .CallDate = dtpCall1.Value.ToString("MM-dd-yyyy") & " " & _
-                                    dtpCall2.Value.ToString("H:mm:ss")
-                        pbOkSave = True
-                        Me.Close()
+                        If MsgBox("Do you want to reschedule this Transaction?", vbQuestion + vbYesNo, "Confirm") = vbYes Then
+                            .isCallAgain = True
+                            .CallDate = dtpCall1.Value.ToString("MM-dd-yyyy") & " " & _
+                                        dtpCall2.Value.ToString("H:mm:ss")
+                            pbOkSave = True
+                            Me.Close()
+                        ElseIf MsgBox("Do you to unload this Transaction?", vbQuestion + vbYesNo, "Confirm") = vbYes Then
+                            pbOkSave = False
+                            Me.Close()
+                        End If
                     Else
                         pbOkSave = False
                         Me.Close()
                     End If
+
 
             End Select
         End With

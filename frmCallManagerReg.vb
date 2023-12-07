@@ -197,7 +197,9 @@ Private Sub LoadDetail()
                 loForm.ShowDialog()
 
                 If loForm.OkSave Then
-                    oTrans.SaveTransaction(lnRow)
+                    If (oTrans.SaveTransaction(lnRow)) Then
+                        MsgBox("Transaction Successfully rescheduled.", MsgBoxStyle.Information, "Notice")
+                    End If
                 End If
             End If
         End With
@@ -218,5 +220,6 @@ Private Sub LoadDetail()
             Return ""
         End If
     End Function
+
 
 End Class
