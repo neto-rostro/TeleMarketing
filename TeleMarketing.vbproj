@@ -120,6 +120,18 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCallManagerRegDetail.Designer.vb">
+      <DependentUpon>frmCallManagerRegDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCallManagerRegDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCallManagerReg.Designer.vb">
+      <DependentUpon>frmCallManagerReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCallManagerReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmGanadoEntry.Designer.vb">
       <DependentUpon>frmGanadoEntry.vb</DependentUpon>
     </Compile>
@@ -352,6 +364,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmCallManagerRegDetail.resx">
+      <DependentUpon>frmCallManagerRegDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCallManagerReg.resx">
+      <DependentUpon>frmCallManagerReg.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGanadoEntry.resx">
       <DependentUpon>frmGanadoEntry.vb</DependentUpon>
     </EmbeddedResource>
@@ -466,6 +484,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

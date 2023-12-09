@@ -260,5 +260,34 @@ Module modMain
             Return "UNKNOWN"
         End If
     End Function
+
+    Function TLMStatus(ByVal fnStatus As String) As String
+        Select Case fnStatus
+            Case "AM"
+                Return "Answering Machine"
+            Case "CB"
+                Return "Call Back"
+            Case "CR"
+                Return "Cannot Be Reached"
+            Case "NA"
+                Return "Customer Not Around"
+            Case "NC"
+                Return "No Capacity "
+            Case "NI"
+                Return "Not Interested"
+            Case "NN"
+                Return "Not Now"
+            Case "PS"
+                Return "Possible Sales"
+            Case "UR"
+                Return "Cannot Be Reached"
+            Case "WN"
+                Return "Wrong Number"
+
+            Case Else
+                Return "UNKNOWN"
+
+        End Select
+    End Function
 End Module
 
