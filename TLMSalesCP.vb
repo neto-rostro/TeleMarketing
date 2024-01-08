@@ -113,7 +113,8 @@ Public Class TLMSalesCP
                 Select Case Index
                     Case 8
                         If IsDate(value) Then
-                            p_oDTMstr(0).Item(Index) = Format(CDate(value), "yyyy-MM-dd")
+                            p_oDTMstr(0).Item(Index) = Format(
+                                (value), "yyyy-MM-dd")
 
                         End If
 
