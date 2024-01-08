@@ -201,7 +201,7 @@ Public Class frmOGCallCustInfoCP
                 If txtField00.Text <> "" Then
                     If MsgBox("Do you want to approved this Trasnaction?", vbQuestion + vbYesNo, "Confirm") = vbYes Then
                         If oTrans.CancelTransaction() Then
-                            MsgBox("Transaction Dissapproved Successfuly.", MsgBoxStyle.Information, "Notice")
+                            MsgBox("Transaction Disapproved Successfuly.", MsgBoxStyle.Information, "Notice")
                             oTrans = Nothing
                             oTrans = New TLMSalesCP(p_oAppDriver)
                             clearFields()

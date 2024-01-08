@@ -166,5 +166,12 @@ Public Class frmCallManagerRegDetail
         pnIndex = loIndex
     End Sub
 
+    Private Sub dtpCall1_ValueChanged(sender As Object, e As EventArgs) Handles dtpCall1.ValueChanged
+        If CDate(dtpCall1.Value) < CDate(p_oAppDriver.getSysDate) Then
+            dtpCall1.Value = p_oAppDriver.getSysDate
+            MsgBox("Date seems to be back Date ." & vbCrLf &
+                   "Please check your entry try again!", vbOKOnly, "Reschudeling")
 
+        End If
+    End Sub
 End Class

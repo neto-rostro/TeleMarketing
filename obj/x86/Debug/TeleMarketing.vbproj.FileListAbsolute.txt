@@ -225,8 +225,10 @@ C:\GGC_Systems\vb.net\TeleMarketing.exe.config
 C:\GGC_Systems\vb.net\TeleMarketing.exe
 C:\GGC_Systems\vb.net\TeleMarketing.pdb
 C:\GGC_Systems\vb.net\TeleMarketing.xml
-C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.vbprojResolveAssemblyReference.cache
+C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.vbproj.AssemblyReference.cache
 C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.vbproj.ResolveComReference.cache
+C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.frmCallManagerRegDetail.resources
+C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.frmCallManagerReg.resources
 C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.frmGanadoEntry.resources
 C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.frmOGCallCustInfoCPReg.resources
 C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.frmOGCallCustInfoCP.resources
@@ -263,9 +265,9 @@ C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.frmS
 C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.frmVotingDetails.resources
 C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.mdiMain.resources
 C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.Resources.resources
-C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.vbproj.GenerateResource.Cache
+C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.vbproj.GenerateResource.cache
+C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.vbproj.CoreCompileInputs.cache
+C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.vbproj.CopyComplete
 C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.exe
 C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.xml
 C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.pdb
-C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.frmCallManagerReg.resources
-C:\Users\Maynard\Documents\GitHub\TeleMarketing\obj\x86\Debug\TeleMarketing.frmCallManagerRegDetail.resources

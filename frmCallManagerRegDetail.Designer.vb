@@ -160,7 +160,7 @@ Partial Class frmCallManagerRegDetail
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(26, 163)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(63, 16)
+        Me.Label8.Size = New System.Drawing.Size(62, 16)
         Me.Label8.TabIndex = 29
         Me.Label8.Text = "Remarks"
         '
@@ -181,7 +181,7 @@ Partial Class frmCallManagerRegDetail
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(24, 139)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(45, 16)
+        Me.Label5.Size = New System.Drawing.Size(44, 16)
         Me.Label5.TabIndex = 27
         Me.Label5.Text = "Status"
         '
@@ -202,7 +202,7 @@ Partial Class frmCallManagerRegDetail
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(24, 115)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(58, 16)
+        Me.Label3.Size = New System.Drawing.Size(57, 16)
         Me.Label3.TabIndex = 25
         Me.Label3.Text = "Call End"
         '
@@ -212,7 +212,7 @@ Partial Class frmCallManagerRegDetail
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(24, 91)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(61, 16)
+        Me.Label2.Size = New System.Drawing.Size(60, 16)
         Me.Label2.TabIndex = 24
         Me.Label2.Text = "Call Start"
         '
@@ -244,7 +244,7 @@ Partial Class frmCallManagerRegDetail
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(24, 67)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(43, 16)
+        Me.Label1.Size = New System.Drawing.Size(42, 16)
         Me.Label1.TabIndex = 21
         Me.Label1.Text = "Agent"
         '
@@ -254,7 +254,7 @@ Partial Class frmCallManagerRegDetail
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(24, 43)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(73, 16)
+        Me.Label7.Size = New System.Drawing.Size(72, 16)
         Me.Label7.TabIndex = 7
         Me.Label7.Text = "Mobile No."
         '
@@ -264,7 +264,7 @@ Partial Class frmCallManagerRegDetail
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(24, 15)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(65, 16)
+        Me.Label4.Size = New System.Drawing.Size(64, 16)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "Customer"
         '
