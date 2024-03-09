@@ -221,7 +221,7 @@ Public Class mdiMain
         End If
     End Sub
 
-    Private Sub ATMToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ATMToolStripMenuItem.Click
+    Private Sub ATMToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         With frmTextMarketing
             If isFormOpen(.Name) Then Exit Sub
 
@@ -367,6 +367,17 @@ Public Class mdiMain
 
     Private Sub OutBoundCallToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OutBoundCallToolStripMenuItem1.Click
         With frmCallManagerReg
+            If isFormOpen(.Name) Then Exit Sub
+
+            .MdiParent = Me
+
+            .Show()
+            .Refresh()
+        End With
+    End Sub
+
+    Private Sub BentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BentaToolStripMenuItem.Click
+        With frmBenta
             If isFormOpen(.Name) Then Exit Sub
 
             .MdiParent = Me
