@@ -6,6 +6,8 @@ Module modMain
     Public p_sComptrID As String
     Public pxeSubscribr As String
 
+    Private Declare Sub keybd_event Lib "user32.dll" (ByVal bVk As Byte, ByVal bScan As Byte, ByVal dwFlags As UInteger, ByVal dwExtraInfo As UInteger)
+
     Public Sub Main(ByVal args As String())
         'Enable XP visual style/skin
         Application.EnableVisualStyles()
@@ -289,5 +291,16 @@ Module modMain
 
         End Select
     End Function
+
+    Public Sub SetNextFocus()
+        keybd_event(&H9, 0, 0, 0)
+        keybd_event(&H9, 0, &H2, 0)
+    End Sub
+
+    Public Sub SetPreviousFocus()
+        keybd_event(&H10, 0, 0, 0)
+        keybd_event(&H9, 0, 0, 0)
+        keybd_event(&H10, 0, &H2, 0)
+    End Sub
 End Module
 
