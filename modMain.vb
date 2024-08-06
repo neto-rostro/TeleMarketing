@@ -230,6 +230,8 @@ Module modMain
             Return "CALLED"
         ElseIf fnStatus = 3 Then
             Return "DISCARDED"
+        ElseIf fnStatus = 5 Then
+            Return "RECYCLED"
         Else
             Return "UNKNOWN"
         End If

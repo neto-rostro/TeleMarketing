@@ -159,7 +159,7 @@ Public Class frmBenta
                 txtPaymn03.Visible = False
             End If
 
-            txtRefer00.Text = IFNull(.Master("sClientNm"), "")
+            txtRefer00.Text = IFNull(.Master("xReferNme"), "")
             txtRefer01.Text = Format(.Master("dCreatedx"), "MMM dd, yyyy HH:mm:ss")
             txtRefer02.Text = .Master("sRelatnID")
             txtRefer03.Text = IFNull(.Master("sRemarksx"), "")

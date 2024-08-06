@@ -87,6 +87,8 @@ Partial Class frmBenta
         Me.txtPaymn00 = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.txtPrdct07 = New System.Windows.Forms.TextBox()
+        Me.Label47 = New System.Windows.Forms.Label()
         Me.txtPrdct05 = New System.Windows.Forms.TextBox()
         Me.Label45 = New System.Windows.Forms.Label()
         Me.txtPrdct04 = New System.Windows.Forms.TextBox()
@@ -131,8 +133,6 @@ Partial Class frmBenta
         Me.txtField00 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.txtPrdct07 = New System.Windows.Forms.TextBox()
-        Me.Label47 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
@@ -865,6 +865,26 @@ Partial Class frmBenta
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Product Information"
         '
+        'txtPrdct07
+        '
+        Me.txtPrdct07.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPrdct07.Location = New System.Drawing.Point(118, 117)
+        Me.txtPrdct07.Name = "txtPrdct07"
+        Me.txtPrdct07.ReadOnly = True
+        Me.txtPrdct07.Size = New System.Drawing.Size(100, 20)
+        Me.txtPrdct07.TabIndex = 45
+        Me.txtPrdct07.TabStop = False
+        '
+        'Label47
+        '
+        Me.Label47.AutoSize = True
+        Me.Label47.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label47.Location = New System.Drawing.Point(15, 121)
+        Me.Label47.Name = "Label47"
+        Me.Label47.Size = New System.Drawing.Size(65, 13)
+        Me.Label47.TabIndex = 44
+        Me.Label47.Text = "Selling Price"
+        '
         'txtPrdct05
         '
         Me.txtPrdct05.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1303,26 +1323,6 @@ Partial Class frmBenta
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(100, 20)
         Me.Panel2.TabIndex = 3
-        '
-        'txtPrdct07
-        '
-        Me.txtPrdct07.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPrdct07.Location = New System.Drawing.Point(118, 117)
-        Me.txtPrdct07.Name = "txtPrdct07"
-        Me.txtPrdct07.ReadOnly = True
-        Me.txtPrdct07.Size = New System.Drawing.Size(100, 20)
-        Me.txtPrdct07.TabIndex = 45
-        Me.txtPrdct07.TabStop = False
-        '
-        'Label47
-        '
-        Me.Label47.AutoSize = True
-        Me.Label47.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label47.Location = New System.Drawing.Point(15, 121)
-        Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(65, 13)
-        Me.Label47.TabIndex = 44
-        Me.Label47.Text = "Selling Price"
         '
         'frmBenta
         '
