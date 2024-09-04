@@ -1335,7 +1335,7 @@ Partial Class frmBenta
         Me.KeyPreview = True
         Me.Name = "frmBenta"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Benta"
+        Me.Text = "Kita MoTo - Telamarketing"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox7.ResumeLayout(False)

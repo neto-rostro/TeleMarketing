@@ -528,7 +528,7 @@ Public Class frmBenta
                 If (Not IsDate(Value)) Then
                     txtField07.Text = ""
                 Else
-                    txtField07.Text = Format(CDate(Value("dBirthDte")), "MMM dd, yyyy")
+                    txtField07.Text = Format(CDate(Value), "MMM dd, yyyy")
                 End If
             Case 8
                 txtField08.Text = Value
