@@ -214,6 +214,7 @@ Public Class frmBenta
         txtField12.Text = ""
         txtField13.Text = ""
 
+        txtRefer00.Text = ""
         txtRefer01.Text = ""
         txtRefer02.Text = ""
         txtRefer03.Text = ""
@@ -229,6 +230,7 @@ Public Class frmBenta
         txtPrdct04.Text = ""
         txtPrdct05.Text = ""
         txtPrdct06.Text = ""
+        txtPrdct07.Text = ""
 
         txtPaymn00.Text = ""
         txtPaymn03.Text = ""
