@@ -1048,7 +1048,7 @@ Partial Class frmBenta
         Me.GroupBox3.Size = New System.Drawing.Size(360, 455)
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Personal Information"
+        Me.GroupBox3.Text = "Customer Information"
         '
         'ComboBox2
         '
