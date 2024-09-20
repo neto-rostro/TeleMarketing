@@ -159,7 +159,7 @@ Public Class frmBenta
                 txtPaymn03.Visible = False
             End If
 
-            txtRefer00.Text = IFNull(.Master("sClientNm"), "")
+            txtRefer00.Text = IFNull(.Master("xReferNme"), "")
             txtRefer01.Text = Format(.Master("dCreatedx"), "MMM dd, yyyy HH:mm:ss")
             txtRefer02.Text = .Master("sRelatnID")
             txtRefer03.Text = IFNull(.Master("sRemarksx"), "")
@@ -214,6 +214,7 @@ Public Class frmBenta
         txtField12.Text = ""
         txtField13.Text = ""
 
+        txtRefer00.Text = ""
         txtRefer01.Text = ""
         txtRefer02.Text = ""
         txtRefer03.Text = ""
@@ -229,6 +230,7 @@ Public Class frmBenta
         txtPrdct04.Text = ""
         txtPrdct05.Text = ""
         txtPrdct06.Text = ""
+        txtPrdct07.Text = ""
 
         txtPaymn00.Text = ""
         txtPaymn03.Text = ""
@@ -528,7 +530,7 @@ Public Class frmBenta
                 If (Not IsDate(Value)) Then
                     txtField07.Text = ""
                 Else
-                    txtField07.Text = Format(CDate(Value("dBirthDte")), "MMM dd, yyyy")
+                    txtField07.Text = Format(CDate(Value), "MMM dd, yyyy")
                 End If
             Case 8
                 txtField08.Text = Value

@@ -120,6 +120,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmBenta.Designer.vb">
+      <DependentUpon>frmBenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmCallManagerRegDetail.Designer.vb">
       <DependentUpon>frmCallManagerRegDetail.vb</DependentUpon>
     </Compile>
@@ -130,6 +136,12 @@
       <DependentUpon>frmCallManagerReg.vb</DependentUpon>
     </Compile>
     <Compile Include="frmCallManagerReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientConcern.Designer.vb">
+      <DependentUpon>frmClientConcern.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientConcern.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmGanadoEntry.Designer.vb">
@@ -148,6 +160,12 @@
       <DependentUpon>frmOGCallCustInfoCP.vb</DependentUpon>
     </Compile>
     <Compile Include="frmOGCallCustInfoCP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaveBenta.Designer.vb">
+      <DependentUpon>frmSaveBenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaveBenta.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TLMSalesCP.vb" />
@@ -364,11 +382,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmBenta.resx">
+      <DependentUpon>frmBenta.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCallManagerRegDetail.resx">
       <DependentUpon>frmCallManagerRegDetail.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCallManagerReg.resx">
       <DependentUpon>frmCallManagerReg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientConcern.resx">
+      <DependentUpon>frmClientConcern.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGanadoEntry.resx">
       <DependentUpon>frmGanadoEntry.vb</DependentUpon>
@@ -399,6 +423,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmReportViewer.resx">
       <DependentUpon>frmReportViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaveBenta.resx">
+      <DependentUpon>frmSaveBenta.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTextMarketingReg.resx">
       <DependentUpon>frmTextMarketingReg.vb</DependentUpon>
@@ -724,11 +751,11 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ggcMCSales\ggcMCSales.vbproj">
+    <ProjectReference Include="..\..\..\My Applications\ggcMCSales\ggcMCSales.vbproj">
       <Project>{B1C58318-8858-45A8-95A9-A17C643A0488}</Project>
       <Name>ggcMCSales</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ggcTeleMarketingReports\ggcTeleMarketingReports.vbproj">
+    <ProjectReference Include="..\..\..\My Applications\ggcTeleMarketingReports\ggcTeleMarketingReports.vbproj">
       <Project>{6DDAA264-2DBB-4ADF-935D-F8CF4CF9FCD7}</Project>
       <Name>ggcTeleMarketingReports</Name>
     </ProjectReference>

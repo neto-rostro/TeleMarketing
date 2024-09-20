@@ -400,7 +400,7 @@ Public Class frmCallManager
         End With
 
         With gridHistory
-            .ColumnCount = 5
+            .ColumnCount = 6
             .RowCount = 1
 
             .AllowUserToAddRows = False
@@ -421,12 +421,14 @@ Public Class frmCallManager
             .Columns(2).Width = 105
             .Columns(3).Width = 105
             .Columns(4).Width = 105
+            .Columns(5).Width = 0
 
             .Columns(0).Name = "No"
             .Columns(1).Name = "Table Name"
             .Columns(2).Name = "Reference"
             .Columns(3).Name = "Date"
             .Columns(4).Name = "Status"
+            .Columns(5).Name = ""
 
             .Rows(0).Selected = True
         End With
@@ -472,6 +474,7 @@ Public Class frmCallManager
         txtHistx02.Text = ""
         txtHistx03.Text = ""
         txtHistx04.Text = ""
+        txtHistx05.Text = ""
     End Sub
 
     Private Sub ClearFields()
@@ -884,6 +887,7 @@ endProc:
                         Case "Ganado_Online"
                             .Rows(lnCtr).Cells(4).Value = MCSalesStatus(poHistory(lnCtr)("cTranStat"))
                     End Select
+                    .Rows(lnCtr).Cells(5).Value = poHistory(lnCtr)("sSourceNm")
                 Next
                 .Rows(0).Selected = True
 
@@ -902,6 +906,7 @@ endProc:
         txtHistx01.Text = IFNull(poHistory(lnRow)(1))
         txtHistx03.Text = poHistory(lnRow)(3)
         txtHistx04.Text = poHistory(lnRow)(4)
+        txtHistx05.Text = poHistory(lnRow)(5)
 
         Select Case poHistory(lnRow)("sTableNme")
             Case "MC_Inquiry", "MC_Referral"
