@@ -101,6 +101,7 @@ Public Class frmBenta
             txtField11.Text = .Personal_Info("sTownIDxx")
             txtField12.Text = .Personal_Info("sMobileNo")
             txtField13.Text = .Personal_Info("sEmailAdd")
+            txtField14.Text = .Personal_Info("sRelatnID")
 
             If .Master("cGanadoTp") <> "0" Then
                 txtPrdct00.Text = .Product_Info("sBrandIDx")
@@ -161,7 +162,7 @@ Public Class frmBenta
 
             txtRefer00.Text = IFNull(.Master("xReferNme"), "")
             txtRefer01.Text = Format(.Master("dCreatedx"), "MMM dd, yyyy HH:mm:ss")
-            txtRefer02.Text = .Master("sRelatnID")
+            txtRefer02.Text = .Personal_Info("sRelatnID")
             txtRefer03.Text = IFNull(.Master("sRemarksx"), "")
             txtRefer04.Text = IFNull(.Master("nLatitude"), "-")
             txtRefer05.Text = IFNull(.Master("nLongitud"), "-")
@@ -213,6 +214,7 @@ Public Class frmBenta
         txtField11.Text = ""
         txtField12.Text = ""
         txtField13.Text = ""
+        txtField14.Text = ""
 
         txtRefer00.Text = ""
         txtRefer01.Text = ""
@@ -343,6 +345,9 @@ Public Class frmBenta
             ElseIf loIndex = 11 Then
                 lasValue = Split(loTxt.Text, ",")
                 oTrans.Personal_Info("sTownIDxx") = lasValue(0)
+            ElseIf loIndex = 14 Then
+                lasValue = Split(loTxt.Text, ",")
+                oTrans.Personal_Info("sRelatnID") = lasValue(0)
             End If
         End If
     End Sub
@@ -544,6 +549,8 @@ Public Class frmBenta
                 txtField12.Text = Value
             Case 13
                 txtField13.Text = Value
+            Case 14
+                txtField14.Text = Value
         End Select
     End Sub
 
