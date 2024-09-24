@@ -104,6 +104,7 @@ Partial Class frmBenta
         Me.txtPrdct00 = New System.Windows.Forms.TextBox()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label48 = New System.Windows.Forms.Label()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.txtField13 = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
@@ -133,6 +134,7 @@ Partial Class frmBenta
         Me.txtField00 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.txtField14 = New System.Windows.Forms.TextBox()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
@@ -1013,6 +1015,8 @@ Partial Class frmBenta
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.txtField14)
+        Me.GroupBox3.Controls.Add(Me.Label48)
         Me.GroupBox3.Controls.Add(Me.ComboBox2)
         Me.GroupBox3.Controls.Add(Me.txtField13)
         Me.GroupBox3.Controls.Add(Me.Label14)
@@ -1050,12 +1054,22 @@ Partial Class frmBenta
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Customer Information"
         '
+        'Label48
+        '
+        Me.Label48.AutoSize = True
+        Me.Label48.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label48.Location = New System.Drawing.Point(15, 420)
+        Me.Label48.Name = "Label48"
+        Me.Label48.Size = New System.Drawing.Size(89, 13)
+        Me.Label48.TabIndex = 30
+        Me.Label48.Text = "Relation to Agent"
+        '
         'ComboBox2
         '
         Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"Male", "Female", "LGBTQ++"})
-        Me.ComboBox2.Location = New System.Drawing.Point(118, 197)
+        Me.ComboBox2.Location = New System.Drawing.Point(118, 185)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(100, 21)
         Me.ComboBox2.TabIndex = 15
@@ -1063,7 +1077,7 @@ Partial Class frmBenta
         'txtField13
         '
         Me.txtField13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtField13.Location = New System.Drawing.Point(118, 408)
+        Me.txtField13.Location = New System.Drawing.Point(118, 381)
         Me.txtField13.MaxLength = 60
         Me.txtField13.Name = "txtField13"
         Me.txtField13.Size = New System.Drawing.Size(224, 20)
@@ -1073,7 +1087,7 @@ Partial Class frmBenta
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(15, 412)
+        Me.Label14.Location = New System.Drawing.Point(15, 385)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(73, 13)
         Me.Label14.TabIndex = 28
@@ -1082,7 +1096,7 @@ Partial Class frmBenta
         'txtField12
         '
         Me.txtField12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtField12.Location = New System.Drawing.Point(118, 387)
+        Me.txtField12.Location = New System.Drawing.Point(118, 360)
         Me.txtField12.MaxLength = 11
         Me.txtField12.Name = "txtField12"
         Me.txtField12.Size = New System.Drawing.Size(100, 20)
@@ -1092,7 +1106,7 @@ Partial Class frmBenta
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(15, 391)
+        Me.Label13.Location = New System.Drawing.Point(15, 364)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(58, 13)
         Me.Label13.TabIndex = 26
@@ -1101,7 +1115,7 @@ Partial Class frmBenta
         'txtField11
         '
         Me.txtField11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtField11.Location = New System.Drawing.Point(118, 345)
+        Me.txtField11.Location = New System.Drawing.Point(118, 326)
         Me.txtField11.Name = "txtField11"
         Me.txtField11.Size = New System.Drawing.Size(224, 20)
         Me.txtField11.TabIndex = 25
@@ -1110,7 +1124,7 @@ Partial Class frmBenta
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(15, 349)
+        Me.Label12.Location = New System.Drawing.Point(15, 330)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(24, 13)
         Me.Label12.TabIndex = 24
@@ -1119,7 +1133,7 @@ Partial Class frmBenta
         'txtField10
         '
         Me.txtField10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtField10.Location = New System.Drawing.Point(118, 303)
+        Me.txtField10.Location = New System.Drawing.Point(118, 284)
         Me.txtField10.MaxLength = 128
         Me.txtField10.Multiline = True
         Me.txtField10.Name = "txtField10"
@@ -1130,7 +1144,7 @@ Partial Class frmBenta
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(15, 307)
+        Me.Label11.Location = New System.Drawing.Point(15, 288)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(45, 13)
         Me.Label11.TabIndex = 22
@@ -1139,7 +1153,7 @@ Partial Class frmBenta
         'txtField09
         '
         Me.txtField09.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtField09.Location = New System.Drawing.Point(118, 281)
+        Me.txtField09.Location = New System.Drawing.Point(118, 262)
         Me.txtField09.MaxLength = 5
         Me.txtField09.Name = "txtField09"
         Me.txtField09.Size = New System.Drawing.Size(43, 20)
@@ -1149,7 +1163,7 @@ Partial Class frmBenta
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(15, 285)
+        Me.Label10.Location = New System.Drawing.Point(15, 266)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(58, 13)
         Me.Label10.TabIndex = 20
@@ -1158,7 +1172,7 @@ Partial Class frmBenta
         'txtField08
         '
         Me.txtField08.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtField08.Location = New System.Drawing.Point(118, 240)
+        Me.txtField08.Location = New System.Drawing.Point(118, 228)
         Me.txtField08.Name = "txtField08"
         Me.txtField08.Size = New System.Drawing.Size(224, 20)
         Me.txtField08.TabIndex = 19
@@ -1166,7 +1180,7 @@ Partial Class frmBenta
         'txtField07
         '
         Me.txtField07.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtField07.Location = New System.Drawing.Point(118, 218)
+        Me.txtField07.Location = New System.Drawing.Point(118, 206)
         Me.txtField07.Name = "txtField07"
         Me.txtField07.Size = New System.Drawing.Size(100, 20)
         Me.txtField07.TabIndex = 17
@@ -1175,7 +1189,7 @@ Partial Class frmBenta
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(15, 244)
+        Me.Label9.Location = New System.Drawing.Point(15, 232)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(58, 13)
         Me.Label9.TabIndex = 18
@@ -1185,7 +1199,7 @@ Partial Class frmBenta
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(15, 222)
+        Me.Label8.Location = New System.Drawing.Point(15, 210)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(54, 13)
         Me.Label8.TabIndex = 16
@@ -1195,7 +1209,7 @@ Partial Class frmBenta
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(15, 201)
+        Me.Label7.Location = New System.Drawing.Point(15, 189)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(42, 13)
         Me.Label7.TabIndex = 14
@@ -1204,7 +1218,7 @@ Partial Class frmBenta
         'txtField05
         '
         Me.txtField05.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtField05.Location = New System.Drawing.Point(118, 176)
+        Me.txtField05.Location = New System.Drawing.Point(118, 164)
         Me.txtField05.MaxLength = 60
         Me.txtField05.Name = "txtField05"
         Me.txtField05.Size = New System.Drawing.Size(224, 20)
@@ -1214,7 +1228,7 @@ Partial Class frmBenta
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(15, 180)
+        Me.Label6.Location = New System.Drawing.Point(15, 168)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(93, 13)
         Me.Label6.TabIndex = 12
@@ -1323,6 +1337,15 @@ Partial Class frmBenta
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(100, 20)
         Me.Panel2.TabIndex = 3
+        '
+        'txtField14
+        '
+        Me.txtField14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtField14.Location = New System.Drawing.Point(118, 417)
+        Me.txtField14.MaxLength = 60
+        Me.txtField14.Name = "txtField14"
+        Me.txtField14.Size = New System.Drawing.Size(224, 20)
+        Me.txtField14.TabIndex = 31
         '
         'frmBenta
         '
@@ -1463,4 +1486,6 @@ Partial Class frmBenta
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents txtPrdct07 As TextBox
     Friend WithEvents Label47 As Label
+    Friend WithEvents Label48 As Label
+    Friend WithEvents txtField14 As TextBox
 End Class
