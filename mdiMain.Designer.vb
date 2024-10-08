@@ -68,6 +68,7 @@ Partial Class mdiMain
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.tslDate = New System.Windows.Forms.ToolStripStatusLabel()
         Me.tslUser = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.BranchInquiryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -209,32 +210,32 @@ Partial Class mdiMain
         'BentaToolStripMenuItem
         '
         Me.BentaToolStripMenuItem.Name = "BentaToolStripMenuItem"
-        Me.BentaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BentaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.BentaToolStripMenuItem.Text = "Benta"
         '
         'OutboundCallToolStripMenuItem
         '
         Me.OutboundCallToolStripMenuItem.Name = "OutboundCallToolStripMenuItem"
-        Me.OutboundCallToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.OutboundCallToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.OutboundCallToolStripMenuItem.Text = "Outbound Call"
         '
         'MCInquiryToolStripMenuItem
         '
         Me.MCInquiryToolStripMenuItem.Name = "MCInquiryToolStripMenuItem"
-        Me.MCInquiryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MCInquiryToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.MCInquiryToolStripMenuItem.Text = "MC Inquiry"
         '
         'MCReferralToolStripMenuItem
         '
         Me.MCReferralToolStripMenuItem.Name = "MCReferralToolStripMenuItem"
-        Me.MCReferralToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MCReferralToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.MCReferralToolStripMenuItem.Text = "MC Referral"
         '
         'OutGoingCallInformationToolStripMenuItem
         '
         Me.OutGoingCallInformationToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MCEntryToolStripMenuItem})
         Me.OutGoingCallInformationToolStripMenuItem.Name = "OutGoingCallInformationToolStripMenuItem"
-        Me.OutGoingCallInformationToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.OutGoingCallInformationToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.OutGoingCallInformationToolStripMenuItem.Text = "Sales"
         '
         'MCEntryToolStripMenuItem
@@ -295,7 +296,7 @@ Partial Class mdiMain
         '
         'ReportsToolStripMenuItem
         '
-        Me.ReportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OutboundCallsToolStripMenuItem, Me.LeadsToolStripMenuItem, Me.MCSalesToolStripMenuItem})
+        Me.ReportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OutboundCallsToolStripMenuItem, Me.LeadsToolStripMenuItem, Me.MCSalesToolStripMenuItem, Me.BranchInquiryToolStripMenuItem})
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
         Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
@@ -303,19 +304,19 @@ Partial Class mdiMain
         'OutboundCallsToolStripMenuItem
         '
         Me.OutboundCallsToolStripMenuItem.Name = "OutboundCallsToolStripMenuItem"
-        Me.OutboundCallsToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
+        Me.OutboundCallsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.OutboundCallsToolStripMenuItem.Text = "Outbound Calls"
         '
         'LeadsToolStripMenuItem
         '
         Me.LeadsToolStripMenuItem.Name = "LeadsToolStripMenuItem"
-        Me.LeadsToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
+        Me.LeadsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.LeadsToolStripMenuItem.Text = "Leads"
         '
         'MCSalesToolStripMenuItem
         '
         Me.MCSalesToolStripMenuItem.Name = "MCSalesToolStripMenuItem"
-        Me.MCSalesToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
+        Me.MCSalesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.MCSalesToolStripMenuItem.Text = "MC Sales"
         '
         'UtilityToolStripMenuItem
@@ -366,6 +367,12 @@ Partial Class mdiMain
         Me.tslUser.Name = "tslUser"
         Me.tslUser.Size = New System.Drawing.Size(123, 19)
         Me.tslUser.Text = "ToolStripStatusLabel2"
+        '
+        'BranchInquiryToolStripMenuItem
+        '
+        Me.BranchInquiryToolStripMenuItem.Name = "BranchInquiryToolStripMenuItem"
+        Me.BranchInquiryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BranchInquiryToolStripMenuItem.Text = "Branch Inquiry"
         '
         'mdiMain
         '
@@ -434,4 +441,5 @@ Partial Class mdiMain
     Friend WithEvents MCSalesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents OutBoundCallToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents BentaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BranchInquiryToolStripMenuItem As ToolStripMenuItem
 End Class
