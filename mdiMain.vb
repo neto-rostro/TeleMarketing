@@ -386,4 +386,13 @@ Public Class mdiMain
             .Refresh()
         End With
     End Sub
+
+    Private Sub BranchInquiryToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BranchInquiryToolStripMenuItem.Click
+        Dim loRpt As ggcTeleMarketingReports.clsBranchInquiry
+        loRpt = New ggcTeleMarketingReports.clsBranchInquiry(p_oAppDriver)
+
+        If loRpt.getParameter() Then
+            Call loRpt.ReportTrans()
+        End If
+    End Sub
 End Class
