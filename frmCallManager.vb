@@ -529,22 +529,22 @@ Public Class frmCallManager
     End Sub
 
     Private Sub SelectLeads()
-        Dim loForm As frmLeadsOptions
+        'Dim loForm As frmLeadsOptions
 
-        loForm = New frmLeadsOptions
+        'loForm = New frmLeadsOptions
 
-        loForm.Current = pnLeadsxx
-        loForm.ShowDialog()
-        pnLeadsxx = loForm.Leads
+        'loForm.Current = pnLeadsxx
+        'loForm.ShowDialog()
+        'pnLeadsxx = loForm.Leads
 
-        'mac 2020-05-19
-        'custom call
-        initButtons(pnLeadsxx)
-        If pnLeadsxx = 4 Then Exit Sub
+        ''mac 2020-05-19
+        ''custom call
+        'initButtons(pnLeadsxx)
+        'If pnLeadsxx = 4 Then Exit Sub
 
-        oTrans.LeadSource = pnLeadsxx
+        'oTrans.LeadSource = pnLeadsxx
 
-        loForm = Nothing
+        'loForm = Nothing
 
         With oTrans
             .Subscriber = pxeSubscribr

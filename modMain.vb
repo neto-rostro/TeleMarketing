@@ -66,6 +66,12 @@ Module modMain
             Exit Sub
         End If
 
+        ''lsUserIDxx = "M001220034"
+        ''If Not p_oAppDriver.LogUser(lsUserIDxx) Then
+        ''    MsgBox("User unable to log!")
+        ''    Exit Sub
+        ''End If
+
         If args.Length = 2 Then
             lsUserIDxx = args(1)
             If Not p_oAppDriver.LogUser(lsUserIDxx) Then
